@@ -3,19 +3,19 @@ This project is about building an efficient and smart search engine for fast acc
 
 ## Project Outline:
 
-1. Text Search with Spacy and scikit-learn.
+**1. Text Search with Spacy and scikit-learn.**
   - Preprocess the data with spacy.
   - Compute TF-IDF tables and apply term frequency search to them.
   - Calculate cosine similarity with scikit-learn.
   - Build an inverted index, an essential element of a search engine.
 
-2. Implement Semantic Search with ML and BERT.
+**2. Implement Semantic Search with ML and BERT.**
   - ...
   
-3. Build a Search API with Elasticsearch
+**3. Build a Search API with Elasticsearch**
   - ...
   
-4. UI for a Search API with Flask and Bootstrap
+**4. UI for a Search API with Flask and Bootstrap**
   - ...
 
 ## Tech Stack:
