@@ -10,7 +10,9 @@ This project is about building an efficient and smart search engine for fast acc
   - Build an inverted index, an essential element of a search engine.
 
 **2. Implement Semantic Search with ML and BERT.**
-  - ...
+  - Build a search engine using FAISS similarity search library and a pre-trained DistilBERT model from Transformers.
+  - Implement a search engine using sentence-transformers and FAISS (using SBERT instead of a base BERT model).
+  - Create a question answering agent powered by sentence-transformers, FAISS similarity search engine, and a BERT model for question answering.
   
 **3. Build a Search API with Elasticsearch**
   - ...
