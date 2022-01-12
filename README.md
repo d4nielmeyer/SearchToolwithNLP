@@ -15,7 +15,10 @@ This project is about building an efficient and smart search engine for fast acc
   - Create a question answering agent powered by sentence-transformers, FAISS similarity search engine, and a BERT model for question answering.
   
 **3. Build a Search API with Elasticsearch**
-  - ...
+  - Setting up and indexing an Elasticsearch Docker Container.
+  - Querying an Elasticsearch index.
+  - Boosting search relevance of Elasticsearch results with BERT.
+  - Creating a Flask API serving a BERT model for semantic search.
   
 **4. UI for a Search API with Flask and Bootstrap**
   - ...
