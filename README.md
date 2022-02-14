@@ -21,11 +21,18 @@ This project is about building an efficient and smart search engine for fast acc
   - Creating a Flask API serving a BERT model for semantic search.
   
 **4. UI for a Search API with Flask and Bootstrap**
-  - ...
+  - Setting up a Single Node Elasticsearch Cluster.
+  - Building a User Interface with Bootstrap.
+  - Creating a Docker Image for Flask.
 
 ## Tech Stack:
 
 - Numpy: Basic operations
 - Scikit-learn: Implement a TD-IDF search and an inverted index search
 - Spacy: Perform essential natural language processing steps
-- ...
+- FAISS: Library to create an inverted index for indexing documents in their vectorized form and similarity search
+- Transformers:  Library of state-of-the-art pre-trained models for Natural Language Processing (NLP)
+- Sentence-transformers: Library to encode and search longer documents
+- Elasticsearch: Open-source, scalable search engine
+- Docker Package and deploy applications to run them in different environments, but on the same machine
+- Flask: Compact and easy-to-use web development framework to build a semantic search API
