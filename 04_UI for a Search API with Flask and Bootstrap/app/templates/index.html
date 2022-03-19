@@ -2,7 +2,7 @@
 <html lang="en">
 
 <nav class="navbar navbar-light bg-light justify-content-between">
-    <a class="navbar-brand">Tangible AI</a>
+    <a class="navbar-brand">Search App</a>
 </nav>
 
 <head>
@@ -32,12 +32,12 @@
     <div class="container">
 
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
 
         <div class="search results">
-
+            {% if results %}
             {% for r in results %}
             <div class="card">
                 <div class="card-body">
@@ -46,6 +46,9 @@
                 </div class="card-body">
             </div class="card">
             {% endfor %}
+            {% else %}
+            <p>NOTHING FOUND</p>
+            {% endif %}
         </div class="search results">
     </div>
 
