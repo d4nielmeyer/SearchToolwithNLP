@@ -7,7 +7,7 @@ from transformers import AutoModel, AutoTokenizer, pipeline
 from sentence_transformers import SentenceTransformer, util
 import wikipediaapi
 
-client = Elasticsearch({"scheme": "http", "host": "localhost", "port": 9200})
+client = Elasticsearch("es:9200")
 
 # initialize Wikipedia object
 wiki_data = wikipediaapi.Wikipedia('en')
