@@ -3,7 +3,7 @@ from elasticsearch import Elasticsearch
 from sentence_transformers import SentenceTransformer, util
 
 # create an elasticsearch client
-client = Elasticsearch({"scheme": "http", "host": "localhost", "port": 9200})
+client = Elasticsearch("es:9200")
 
 app = Flask(__name__)
 

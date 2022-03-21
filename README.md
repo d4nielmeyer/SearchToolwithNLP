@@ -25,6 +25,30 @@ This project is about building an efficient and smart search engine for fast acc
   - Building a User Interface with Bootstrap.
   - Creating a Docker Image for Flask.
 
+  *To make use of the Search App:*
+  - Navigate to the '''04_UI for a Search API with Flask and Bootstrap''' folder
+    Build containers:
+    '''docker-compose --verbose build'''
+
+    The --verbose flag in the command above is optional. It helps to keep track of what's happening during the build.
+
+    Once the images are ready, run the containers:
+    '''docker-compose up'''
+
+  - Create and populate Elasticsearch index:
+    '''# (optional) Create environment with Elasticsearch client
+    # or you can use an existing one
+    conda create -n searchenv python=3.8
+    conda activate searchenv
+    pip install elasticsearch
+
+    # Add documents to ElasticSearch
+    python populate_index.py'''
+
+  - Go to localhost:5000/search to search the index.
+
+  Credits go to: https://github.com/ovbondarenko/search-app
+
 ## Tech Stack:
 
 - Numpy: Basic operations
