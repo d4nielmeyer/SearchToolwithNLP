@@ -1,4 +1,4 @@
-# SearchToolwithNLP *[work in progress]*
+# SearchToolwithNLP
 This project is about building an efficient and smart search engine for fast access to the CDC’s document database. The goal is to improve the CDC’s ability to handle future pandemics, with the capability to aggregate and search unstructured text data from records of earlier outbreaks.
 
 ## Project Outline:
@@ -26,26 +26,26 @@ This project is about building an efficient and smart search engine for fast acc
   - Creating a Docker Image for Flask.
 
   *To make use of the Search App:*
-  - Navigate to the '''04_UI for a Search API with Flask and Bootstrap''' folder
+  - Navigate to the ```04_UI for a Search API with Flask and Bootstrap``` folder
     Build containers:
-    '''docker-compose --verbose build'''
+    ```docker-compose --verbose build```
 
-    The --verbose flag in the command above is optional. It helps to keep track of what's happening during the build.
+    The ```--verbose flag``` in the command above is optional. It helps to keep track of what's happening during the build.
 
     Once the images are ready, run the containers:
-    '''docker-compose up'''
+    ```docker-compose up```
 
   - Create and populate Elasticsearch index:
-    '''# (optional) Create environment with Elasticsearch client
+    ```# (optional) Create environment with Elasticsearch client
     # or you can use an existing one
     conda create -n searchenv python=3.8
     conda activate searchenv
     pip install elasticsearch
 
     # Add documents to ElasticSearch
-    python populate_index.py'''
+    python populate_index.py```
 
-  - Go to localhost:5000/search to search the index.
+  - Go to ```localhost:5000/search``` to search the index.
 
   Credits go to: https://github.com/ovbondarenko/search-app
 
